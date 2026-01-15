@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('img/bg-todo.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+#form-todo {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.list {
+    background: #515d77;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list input,
+.list textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccd9f7;
+    font-size: 14px;
+}
+
+.list textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.list input:focus,
+.list textarea:focus {
+    outline: none;
+    border-color: #504ac2;
+}
+
+#todo-submit {
+    background: #24232c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#todo-submit:hover {
+    background: #7a779e;
+}
+
+#todo-list {
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
+}
+
+#todo-list li {
+    background: #bec4d1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#todo-list span {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+#todo-list button {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-group button {
+    flex: 1;
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-group button:first-child { 
+    background: #15522c; 
+    color: white; 
+}
+.btn-group button:last-child { 
+    background: #9c2a2a; 
+    color: white; }
+
+#todo-list li input,
+#todo-list li textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#todo-list span {
+    white-space: pre-line;
+}
+
+#todo-list span strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#todo-list span {
+    font-size: 14px;
+    color: #384252;
+    line-height: 1.4;
+}
+
+
